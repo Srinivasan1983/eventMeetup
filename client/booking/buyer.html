@@ -1,0 +1,52 @@
+<template name="Buyer">
+    <h3>{{eventName}}</h3>
+    <table style="width: 100%;">
+        <tr>
+            <td class="field">Host: </td>
+            <td>{{Host}}</td>
+        </tr>
+        <tr>
+            <td class="field">Place: </td>
+            <td>{{Place}}</td>
+        </tr>
+        <tr>
+            <td class="field">Withdrawal Time: </td>
+            <td>{{WithDrawalDeadline}}</td>
+        </tr>
+        <tr>
+            <td class="field">Start Time: </td>
+            <td>{{StartTime}}</td>
+        </tr>
+        <tr>
+            <td class="field">End Time: </td>
+            <td>{{EndTime}}</td>
+        </tr>
+        <tr>
+            <td class="field">Ticket Price: </td>
+            <td>{{TicketPrice}}</td>
+        </tr>
+        <tr>
+            <td class="field">Tickets Available: </td>
+            <td>{{TicketAvailable}}</td>
+        </tr>
+        <tr>
+            <td class="field">Extra Info: </td>
+            <td>{{ExtraInfo}}</td>
+        </tr>
+    </table>
+    <form class="buy">
+        <input type="text" name="ticketNumber" style="float:left; width:200px;">
+        <input type="submit" name="buy" value="Buy!" style="float:left; width:100px; margin-left:10px;">
+    </form><br><br><br>
+    <form class="withdraw">
+        <input type="text" name="ticketNumber" style="float:left; width:200px;">
+        <input type="submit" name="withdraw" value="Withdraw" style="float:left; width:100px; margin-left:10px;">
+    </form><br> <br/><br/><br/><br/>
+
+    <button class="useTicket">Use Ticket</button>
+    <br/>
+    <button class="refund">Refund</button>
+    <br/>
+    <button class="back">Back</button>
+
+</template>

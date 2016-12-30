@@ -1,0 +1,36 @@
+<template name="ConfirmBuy">
+    <h3>Now you are buying {{eventName}}</h3>
+    <table style="width:100%;">
+        <tr>
+            <td class="field">Your current account balance: </td>
+            <td>{{AccountBalance}}</td>
+        </tr>
+        <tr>
+            <td>Ticket price: </td>
+            <td>{{TicketPrice}}</td>
+        </tr>
+        <tr>
+            <td>Amount: </td>
+            <td>{{TicketAmount}}</td>
+        </tr>
+        <tr>
+            <td>Total: </td>
+            <td>{{TicketCost}}</td>
+        </tr>
+        <tr>
+            <td>Transaction fee: </td>
+            <td>10,0000 gas</td>
+        </tr>
+        <tr>
+            <td>Account balance after deal: </td>
+            <td>{{RemainingBalance}}</td>
+        </tr>
+    </table>
+    <form>
+        Password: <input type="password" name="password" value="">
+        <input type="submit" value="confirm" style="float:right;">
+    </form>
+    <button class="no">Cancel</button>
+
+
+</template>

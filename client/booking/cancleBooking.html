@@ -1,0 +1,42 @@
+<template name="CancleBooking">
+    <h3>Now you are buying {{eventName}}</h3>
+    <form>
+        <table style="width:100%">
+            <tr>
+                <td class="field">Your current account balance: </td>
+                <td>{{AccountBalance 2}}</td>
+            </tr>
+            <tr>
+                <td>Ticket price: </td>
+                <td>{{TicketPrice}}</td>
+            </tr>
+            <tr>
+                <td>Withdraw: </td>
+                <td>{{TicketWithraw}}</td>
+            </tr>
+            <tr>
+                <td>Withdraw Money: </td>
+                <td>{{WithdrawMoney}}</td>
+            </tr>
+            <tr>
+                <td>Ticket Left: </td>
+                <td>{{TicketLeft 2}}</td>
+            </tr>
+            <tr>
+                <td>Transaction fee: </td>
+                <td>10,0000 gas</td>
+            </tr>
+            <tr>
+                <td>Account balance after deal: </td>
+                <td>{{RemainingBalance 2}}</td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" name="password" value="" class="input-field"></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="confirm" style="float:right;">
+    </form>
+    <button class="no">Cancel</button>
+</template>

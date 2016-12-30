@@ -1,0 +1,45 @@
+<template name="confirmcreate">
+    <form>
+        <h3>Createing Event {{eventName}}</h3>
+        <table style="width: 100%;">
+            <tr>
+                <td class="field">Your Name: </td>
+                <td>{{hostName}}</td>
+            </tr>
+            <tr>
+                <td class="field">Place: </td>
+                <td>{{eventPlace}}</td>
+            </tr>
+            <tr>
+                <td class="field">Start Time: </td>
+                <td>{{startTime}}</td>
+            </tr>
+            <tr>
+                <td class="field">End Time: </td>
+                <td>{{endTime}}</td>
+            </tr>
+            <tr>
+                <td class="field">Withdraw Due Time: </td>
+                <td>{{withdrawDeadline}}</td>
+            </tr>
+            <tr>
+                <td class="field">Ticket Price: </td>
+                <td>{{ticketPrice}}</td>
+            </tr>
+            <tr>
+                <td class="field">Amount Of Tickets: </td>
+                <td>{{ticketSupply}}</td>
+            </tr>
+            <tr>
+                <td class="field">Intro: </td>
+                <td>{{extraInfo}}</td>
+            </tr>
+            <tr>
+                <td class="field">Password: </td>
+                <td><input type="password" name="password" value="" class="input-field"></td>
+            </tr>
+        </table>
+        <input type="submit" value="confirm" style="float: right;">
+    </form>
+    <button class="no">Cancel</button>
+</template>
